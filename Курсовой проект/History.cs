@@ -14,7 +14,7 @@ namespace Курсовой_проект
         private string Filepart_geor2 { get; } = @"luk.txt";
         private string Top_20 { get; } = @"luk1.txt";
         public int Count_ { get; set; } = 0;
-
+     
         public string Word { get; set; }
 
         public History() { 
@@ -45,7 +45,7 @@ namespace Курсовой_проект
             sw.Close();
             fs.Close();
         }
-
+        
         public void Top()
         {
             FileStream fs = new FileStream(Top_20, FileMode.Append);

@@ -20,8 +20,7 @@ namespace Курсовой_проект
            
             this.Yes_No = Yes_No;
             
-            while (true)
-            {
+           
                 Console.WriteLine("Вы являетесь зарегистрированным пользователем: Да или Нет ");
                 Yes_No = Console.ReadLine();
 
@@ -49,8 +48,9 @@ namespace Курсовой_проект
                     }
 
                     Top(Login);
+                    
                 }
-
+               
                 else if (Yes_No.ToLower() == "нет" || Yes_No.ToLower() == "no") /*регистация нового пользователя*/
                 {
                     Console.WriteLine("Пройдите этап регистрации");
@@ -84,10 +84,12 @@ namespace Курсовой_проект
                     sw.WriteLine($"{two.ToString()} { Password} {Age}");
                     sw.Close();
                     fs.Close();
+                    
                 }
-
-            }
+                
             
+            
+
 
             Console.WriteLine($"Меню, для выбора нажмите цифру соответствующую \n" +
                  $"0. Выход в главное меню \n" +

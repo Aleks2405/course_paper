@@ -21,6 +21,7 @@ namespace Курсовой_проект
             Login = a;
             Password = b;           
         }
+        
         public Registration(string login, string password, string age)
         {
             Login = login;
